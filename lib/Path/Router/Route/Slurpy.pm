@@ -175,7 +175,14 @@ sub match {
         unless (@parts) {
             die "should never get here: " .
                 "no \@parts left, but more required components remain"
-                if ! $self->is_component_optional($c);
+                    unless $self->is_component_optional($c);
+
+            # Make sure slurpies are always set
+            if ($self->is_component_slurpy($c) and $self->is_component_variable($c)) {
+                my $name = $self->get_component_name($c);
+                $mapping->{$name} = [];
+            }
+
             last;
         }
 
