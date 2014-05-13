@@ -1,0 +1,19 @@
+# Path::Router::Route::Slurpy
+
+This is an add-on library that adds slurpy path matching to Path::Router.
+
+This is library that you probably want to install from CPAN. Patches are
+welcome. You will need Path::Router installed (see CPAN) and all its
+prerequisites.
+
+To install from CPAN, you can use cpanm:
+
+    cpanm Path::Router::Route::Slurpy
+
+If you want to work with development, you will need to know how to use
+Dist::Zilla, but after you have a cloned copy, you can develop and test using
+the dzil command like this:
+
+    dzil test
+
+That's it.
