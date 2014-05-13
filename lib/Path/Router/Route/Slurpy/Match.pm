@@ -1,4 +1,4 @@
-package Yukki::Web::Router::Route::Match;
+package Path::Router::Route::Slurpy::Match;
 use Moose;
 
 extends 'Path::Router::Route::Match';
