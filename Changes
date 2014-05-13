@@ -1,6 +1,4 @@
 {{$NEXT}}
 
-0.141330  2014-05-13 10:17:15 America/Chicago
-
     * Pulled out the slurpy router bits from Yukki to give them their own standalone module.
     * Adds * and + component types to allow for slurpy path matching in Path::Router.
