@@ -32,7 +32,7 @@ $router->add_route('/two/three/+:foo');
 
     $match = $router->match("/one/two");
     ok($match);
-    is_deeply($match->mapping->{foo}, []);
+    is($match->mapping->{foo}, undef);
 
     $match = $router->match("/one/two/three");
     ok($match);
